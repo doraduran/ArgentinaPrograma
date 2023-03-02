@@ -1,6 +1,6 @@
 //Menu lateral
 var URLactual = window.location.pathname;
-const habilidadesURL = "/C:/Users/dora.duran/Documents/Argentina%20programa/habilidades.html";
+const habilidadesURL = "ArgentinaPrograma/habilidades.html";
 var menu_visible = false;
 let menu = document.getElementById("nav");
 function mostrarOcultarMenu(){
@@ -22,7 +22,7 @@ for(var x = 0; x <links.length;x++){
     }
 }
 //SOLO EJECUTO CUANDO ESTE EN LA PAGINA DE HABILIDADES
-if ( habilidadesURL == URLactual) {
+if (URLactual.match(habilidadesURL)) {
 //Creo las barritas de una barra particular identificada por su id
 function crearBarra(id_barra){
     for(i=0;i<=16;i++){
